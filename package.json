@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon --ignore client/ --exec babel-node src/index.js",
+    "dev": "nodemon --exec babel-node src/index.js --delay 2",
+    "build": "babel src --out-dir build",
+    "start": "node build/index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -23,8 +25,10 @@
     "subscriptions-transport-ws": "^0.9.19"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
     "@babel/core": "^7.14.8",
     "@babel/node": "^7.14.7",
+    "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.8",
     "nodemon": "^2.0.12"
   }

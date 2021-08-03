@@ -1,4 +1,4 @@
-import PostModule from "../../../models/Post";
+import PostModule from "../../models/Post";
 import {checkAuth} from '../../util/checkAuth';
 import {AuthenticationError} from "apollo-server";
 

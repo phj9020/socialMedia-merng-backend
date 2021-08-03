@@ -1,4 +1,4 @@
-import userModule from "../../../models/User";
+import userModule from "../../models/User";
 import bcrypt from "bcryptjs";
 import jwt from 'jsonwebtoken';
 import { UserInputError } from "apollo-server";

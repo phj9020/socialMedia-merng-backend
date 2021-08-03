@@ -1,5 +1,5 @@
 import {AuthenticationError} from 'apollo-server';
-import PostModule from "../../../models/Post";
+import PostModule from "../../models/Post";
 import {checkAuth} from '../../util/checkAuth';
 
 const resolverFn = async(_, {postId}, context) => {

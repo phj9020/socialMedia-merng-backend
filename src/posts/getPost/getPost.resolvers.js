@@ -1,4 +1,4 @@
-import PostModule from "../../../models/Post";
+import PostModule from "../../models/Post";
 
 const resolverFn = async(_, {postId}) => {
     

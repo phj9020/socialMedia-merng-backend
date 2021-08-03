@@ -1,4 +1,4 @@
-import userModule from "../../../models/User";
+import userModule from "../../models/User";
 import {checkAuth} from '../../util/checkAuth';
 import jwt from 'jsonwebtoken';
 

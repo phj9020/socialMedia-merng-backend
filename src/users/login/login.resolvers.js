@@ -1,4 +1,4 @@
-import userModule from "../../../models/User";
+import userModule from "../../models/User";
 import {UserInputError} from 'apollo-server';
 import {validateLoginInput} from '../../util/validators';
 import bcrypt from "bcryptjs";

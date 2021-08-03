@@ -16,6 +16,8 @@ import mongoose from 'mongoose';
     const schema = makeExecutableSchema({
         typeDefs,
         resolvers,
+        playground: true,
+        introspection: true,
     });
     
     const server = new ApolloServer({
