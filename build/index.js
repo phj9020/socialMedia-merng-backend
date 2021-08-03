@@ -64,7 +64,7 @@ require("dotenv").config();
             path: server.graphqlPath
           });
 
-          PORT = process.env.Port || 5000;
+          PORT = process.env.PORT;
 
           _mongoose["default"].connect(process.env.MONGO_DB, {
             useNewUrlParser: true,
