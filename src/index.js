@@ -34,12 +34,11 @@ import mongoose from 'mongoose';
         { server: httpServer, path: server.graphqlPath }
     );
 
-    const PORT = process.env.Port || 5000;
 
     mongoose.connect(process.env.MONGO_DB, { useNewUrlParser: true, useUnifiedTopology: true })
         .then(()=> {
             console.log("MongoDB connected")
-            httpServer.listen(PORT, () =>
+            httpServer.listen(process.env.PORT, () =>
                 console.log(`Server is now running on http://localhost:${PORT}/graphql`)
             );
         })
